@@ -1,0 +1,16 @@
+# Mar-7-assignment-
+l=input().split()
+x=[]
+for i in l:
+      x.append(int(i))
+n=len(x)
+t=[]
+for i in x:
+     t.append(i)
+t.sort()
+res=[]
+for i in range (n):
+     for j in range (n):
+          if x[i]==t[j]:
+             res.append(j+1)
+print (res)
